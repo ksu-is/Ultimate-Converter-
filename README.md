@@ -15,3 +15,4 @@ developed to help me save time while processing clients' files at work.
 * Merge PDF files
 
 * UI that could make it more accessible for non-programmers. 
+*this is just a test
