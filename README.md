@@ -26,3 +26,7 @@ This App requires multiple libraries:
 * PyQt6
 * Pillow
 * pillow-heif
+
+# How to Use
+
+Once you ahve installed all libraries just run main.py 
