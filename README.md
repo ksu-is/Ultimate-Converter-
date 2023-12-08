@@ -29,4 +29,4 @@ This App requires multiple libraries:
 
 # How to Use
 
-Once you ahve installed all libraries just run main.py 
+Once you have installed all libraries just run main.py 
