@@ -4,7 +4,7 @@ Introduction
 This would work as an app to convert files from formats HEIC, JPG, and PDF; and also merge multiple pages or files into one (PDF). 
 
 # Purpose
-developed to help me save time while processing clients' files at work. 
+This app was developed to help me save time while processing clients' files at work. 
 
 # Features
 
