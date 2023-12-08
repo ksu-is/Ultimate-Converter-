@@ -21,7 +21,7 @@ This app was developed to help me save time while processing clients' files at w
 
 This App requires multiple libraries:
 
-* Tkkinter
+* Tkinter
 * Pikepdf
 * PyQt6
 * Pillow
