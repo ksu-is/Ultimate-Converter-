@@ -33,8 +33,8 @@ class image_to_pdf:
     def getPictures(self):
         pictures = list(filter(self.filter, self.sortFiles()))
         if self.isEmpty(pictures):
-            print("There are no pictrues in the directory !")
-            raise Exception("There are no pictrues in the directory !")
+        	print("There are no pictrues in the directory !")
+        	raise Exception("There are no pictrues in the directory !")
         print('Convert pictures are : \n {}'.format(pictures))
         return pictures
 
@@ -42,21 +42,16 @@ class image_to_pdf:
     	return True if len(items) == 0 else False
 
 
-def convertPictures(self):
+    def convertPictures(self):
         for picture in self.getPictures():
             self.pictures.append(Image.open(picture).convert('RGB'))
         self.save()
 
-def convert_images_to_pdf(input_path='./images'):
-    path = Path(input_path)
-    exts = {'.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff'}
 
-    for path_object in path.glob('**/*'):
-        if path_object.is_file() and path_object.suffix in exts:
-            img = Image.open(path_object)
-            img = img.convert('RGB')
-            pdf_path = path_object.parent / (path_object.stem + '.pdf')
-            img.save(pdf_path, 'PDF', resolution=100.0)
+
+    def save(self):
+        self.pictures[0].save('PDF_of_Pictures.pdf', 
+        save_all=True, append_images=self.pictures[1:])
 
 
 class DragDropListbox(tk.Listbox):
@@ -171,9 +166,9 @@ def File_Converter():
 root = tk.Tk()
 root.title("Ultimate Converter")
 
-button1 = tk.Button(root, text="Convert to Heic, JPG, or PGN", command=File_Converter)
-button2 = tk.Button(root, text="Merge PDF", command=pdfMergerApp)
-button3 = tk.Button(root, text="convert to PDF", command=image_to_pdf)
+button1 = tk.Button(root, text="Convert HEIC, PDF, or JPG", command=File_Converter)
+button2 = tk.Button(root, text="Merge PDFs", command=pdfMergerApp)
+button3 = tk.Button(root, text="Convert all pictures into one PDF", command=image_to_pdf)
 
 button1.pack(pady=50)
 button2.pack(pady=50)
