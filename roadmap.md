@@ -5,7 +5,14 @@
   - [x] Explore Python repositories
 
 # Sprint 2
-  - [ ] Code - draft
-  - [ ] Change 1
-  - [ ] Change 2
-  - [ ] Change 3
+  - [x] Code - draft
+  - [x] Change 1
+  - [x] Change 2
+
+# Sprint 3
+  - [x] Complete PowerPoint slide
+  - [x] Collect more forks
+  - [x] make it work?
+
+# Final Presentation
+  - [ ] Present 12-8-2023
