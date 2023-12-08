@@ -16,3 +16,13 @@ developed to help me save time while processing clients' files at work.
 
 * UI that could make it more accessible for non-programmers. 
 *this is just a test
+
+#Requirements
+
+This App requires multiple libraries:
+
+*Tkkinter
+*Pikepdf
+*PyQt6
+*Pillow
+*pillow-heif
